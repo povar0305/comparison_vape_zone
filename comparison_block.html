@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison_block</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        .comparsion_title {
+            text-align: center;
+        }
+        
+        .comparsion_first-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        
+        .comparsion_second-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        .comparsion_navigate,
+        .comparsion_products {
+            max-width: 1139px;
+            margin-inline: 375px;
+        }
+        
+        .comparsion_go-back {
+            display: contents;
+        }
+        
+        .comparsion_links {
+            text-decoration: none;
+            color: black;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        
+        .comparsion_img {
+            margin-inline: 1%;
+        }
+        
+        .comparsion_close {
+            float: right;
+        }
+        
+        .comparsion_products-main {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2.5fr 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-flow: row;
+            grid-template-areas: ". . .";
+            background: #FFFFFF;
+            box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+        }
+        
+        .comparsion_product-img {
+            padding: 10%;
+        }
+        
+        .comparsion_products-buy {
+            align-items: center;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5% 0px;
+            text-align: center;
+        }
+        
+        .comparsion_product-price {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        
+        .comparison_product-button {
+            background: #EF7D00;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            padding: 5%;
+            width: 65%;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+        }
+        
+        .comparison_product-count-main {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .comparison_product-count-minus-main {
+            text-align: right;
+        }
+        
+        .comparison_product-count-plus-main {
+            text-align: left;
+        }
+        
+        .comparison_product-count-minus,
+        .comparison_product-count-plus {
+            background-color: white;
+            border: none;
+        }
+        
+        .comparison_product-count-main,
+        .comparison_product-count-plus,
+        .comparison_product-count-minus {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        
+        .comparsion_products-info {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-rows: 0.5fr 1fr 2fr;
+        }
+        
+        .comparsion_product-info-title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            display: contents;
+        }
+        
+        .comparsion_product-info-star--full {
+            fill: black;
+        }
+        
+        .comparsion_product-info-star--line {
+            border: black 1px;
+        }
+        
+        .comparsion_product-info-category {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .comparsion_product-info-category-block {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        
+        .comparsion_product-info-category-block-main {
+            display: flex;
+        }
+        
+        .comparsion_product-info-category-block-main-name,
+        .comparsion_product-info-category-block-main-text {
+            margin: 0;
+            color: #6B6B63;
+        }
+        
+        .gray_line {
+            border-color: transparent transparent #B3B3B3 transparent
+        }
+    </style>
+    <!-- заголовок -->
+    <div class="comparsion">
+        <div class="comparsion_title">
+            <div class="comparsion_first-text">
+                Избранное
+            </div>
+            <div class="comparsion_second-text">
+                Главная/Избранное
+            </div>
+        </div>
+        <div class="comparsion_navigate">
+            <div class="comparsion_go-back">
+                <a href="#" class="comparsion_links">
+                    <img src="images/comparsion_go-back.svg" class="comparsion_img" alt="стрелочка назад"> Вернуться к покупкам
+                </a>
+            </div>
+            <div class="comparsion_close">
+                <a href="#" class="comparsion_links">
+                    Очистить все
+                    <img src="images/comaprsion_close.svg" alt="кнопка закрытия" class="comparsion_img">
+                </a>
+            </div>
+        </div>
+        <div class="comparsion_products">
+            <!-- товар -->
+            <div class="comparsion_products-main">
+                <!-- картинка -->
+                <div class="comparsion_product-img">
+                    <img src="images/comparsion_product-img.svg" alt="картинка товара">
+                </div>
+                <!-- характеристики -->
+                <div class="comparsion_products-info">
+                    <div class="comparsion_product-info-title">
+                        <p class="comparsion_product-info-title">
+                            Жидкость Bad Drip Salt Cereal Trip Малиновая сахарная ват...
+                        </p>
+
+
+                    </div>
+                    <div class="comparsion_product-info-stars">
+                        <img src="images/comparsion_product-info-star.svg" class="comparsion_product-info-star--full" alt="">
+                        <img src="images/comparsion_product-info-star.svg" class="comparsion_product-info-star--full" alt="">
+                        <img src="images/comparsion_product-info-star.svg" class="comparsion_product-info-star--line" alt="">
+                        <img src="images/comparsion_product-info-star.svg" class="comparsion_product-info-star--line" alt="">
+                        <img src="images/comparsion_product-info-star.svg" class="comparsion_product-info-star--line" alt="">
+                    </div>
+
+                    <div class="comparsion_product-info-category">
+                        <div class="comparsion_product-info-category-block">
+                            <div class="comparsion_product-info-category-block-main gray_line">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                            <div class="comparsion_product-info-category-block-main gray_line">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                            <div class="comparsion_product-info-category-block-main gray_line">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                        </div>
+                        <div class="comparsion_product-info-category-block">
+                            <div class="comparsion_product-info-category-block-main">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                            <div class="comparsion_product-info-category-block-main">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                            <div class="comparsion_product-info-category-block-main">
+                                <p class="comparsion_product-info-category-block-main-name ">Вкус:</p>
+                                <p class="comparsion_product-info-category-block-main-text comparison_product-count-minus-main">Десерт</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- цена -->
+                <div class="comparsion_products-buy">
+                    <div class="comparsion_product-price">
+                        749 руб
+                    </div>
+                    <div class="comparison_product-count-main">
+                        <div class="comparison_product-count-minus-main">
+                            <button class="comparison_product-count-minus">—</button>
+                        </div>
+                        <div class="comparison_product-count-count-main">1</button>
+                        </div>
+                        <div class="comparison_product-count-plus-main">
+                            <button class="comparison_product-count-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="comparison_product-button-main">
+                        <button class="comparison_product-button">
+                            В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
