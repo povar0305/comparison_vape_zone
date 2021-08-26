@@ -6,5 +6,5 @@
 * HTML 5
 
 Результат: 
-![](https://github.com/povar0305/comparison/blob/83832ab2436f98a8229ee5be0e4127f2e5d11afa/1.jpg)
-
+![](https://github.com/povar0305/comparison/blob/45a00adbb3f9c736c277bd6732ecf0ffb5713f22/1.jpg)
+![](https://github.com/povar0305/comparison/blob/45a00adbb3f9c736c277bd6732ecf0ffb5713f22/2.jpg)
